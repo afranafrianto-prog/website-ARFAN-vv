@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <title>Dashboard - MyWebsite</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
     <nav>
         <ul>
-            <li><a href="dashboard.html">Halaman Utama</a></li>
-            <li><a href="#informasi">Informasi</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('info')">Info</a></li>
+            <li><a href="#" onclick="showPage('kontak')">Kontak</a></li>
+            <li><a href="#" onclick="showPage('resources')">Resources</a></li>
             <li class="logout"><a href="index.html">Log Out</a></li>
         </ul>
     </nav>
 
     <div class="content">
-        <section id="utama">
-            <h1>Selamat Datang di Dashboard</h1>
-            <p>Ini adalah halaman utama dari dashboard situs Anda.</p>
+
+        <!-- HOME -->
+        <section id="home" class="page">
+            <h1>Halaman Utama</h1>
+            <p>Selamat datang di dashboard utama website Anda.</p>
         </section>
 
-        <section id="informasi">
-            <h2>Informasi</h2>
-            <p>Berbagai informasi penting dapat diletakkan di sini.</p>
+        <!-- INFO -->
+        <section id="info" class="page" style="display:none;">
+            <h1>Informasi</h1>
+            <p>Halaman ini berisi informasi penting mengenai website atau layanan Anda.</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Hubungi kami melalui platform berikut:</p>
+        <!-- KONTAK -->
+        <section id="kontak" class="page" style="display:none;">
+            <h1>Kontak</h1>
+            <p>Hubungi kami melalui platform di bawah ini:</p>
 
             <div class="socials">
                 <a href="https://wa.me/6280000000000" target="_blank">📱 WhatsApp</a>
@@ -37,6 +43,18 @@
                 <a href="https://instagram.com/username" target="_blank">📸 Instagram</a>
             </div>
         </section>
+
+        <!-- RESOURCES -->
+        <section id="resources" class="page" style="display:none;">
+            <h1>Resources</h1>
+            <p>Berbagai sumber daya atau file penting dapat diletakkan di sini.</p>
+            <ul>
+                <li><a href="#">Resource 1</a></li>
+                <li><a href="#">Resource 2</a></li>
+                <li><a href="#">Resource 3</a></li>
+            </ul>
+        </section>
+
     </div>
 
 </body>

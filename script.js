@@ -3,8 +3,8 @@ function login() {
     let pass = document.getElementById("password").value;
     let error = document.getElementById("errorMsg");
 
-    const correctUser = "admin";
-    const correctPass = "12345";
+    const correctUser = "siapa namamu";
+    const correctPass = "namaku terkenal";
 
     if (user === correctUser && pass === correctPass) {
         window.location.href = "dashboard.html";

@@ -5,6 +5,13 @@ body {
     color: #333;
 }
 
+{
+    background-image: url("img/background.jpg");
+    background-size: cover;       /* memenuhi layar */
+    background-position: center;  /* posisi tengah */
+    background-repeat: no-repeat; /* agar tidak berulang */
+}
+
 /* ------------------ LOGIN PAGE ---------------------- */
 .container {
     text-align: center;
